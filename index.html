@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QR Code generator</title>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<a href="/">
+					<h1>QR Code generator</h1>
+				</a>
+			</div>
+		</nav>
+		<section class="main">
+			<div class="row">
+				<div class="col">
+					<h3>Please enter your URL below to generate a QR</h3>
+					<form action="" method="" id="generate-form">
+						<div class="form-input">
+							<input
+								id="url"
+								type="url"
+								name="urlcode"
+								placeholder="https://www.example.com"
+							/>
+						</div>
+						<div class="form-input">
+							<select name="size">
+								<option value="100">100x100</option>
+								<option value="200">200x200</option>
+								<option value="300" selected>300x300</option>
+								<option value="400">400x400</option>
+								<option value="500">500x500</option>
+								<option value="600">600x600</option>
+								<option value="700">700x700</option>
+							</select>
+						</div>
+						<div class="form-input">
+							<button class="btn">generate qr code</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div id="qrcode" class=""></div>
+			</div>
+		</section>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+			integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="/js/script.js" defer></script>
+	</body>
+</html>

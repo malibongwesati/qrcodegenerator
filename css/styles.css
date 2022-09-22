@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #e7f6f2;
+}
+
+nav {
+	width: 100%;
+	margin: auto;
+	height: 15vh;
+	background-color: #395b64;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.logo a h1 {
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 800;
+	color: #a5c9ca;
+}
+
+.logo a h1::after {
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: #e7f6f2;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.logo a h1:hover::after {
+	width: 100%;
+}
+
+.main {
+	width: 80%;
+	margin: auto;
+}
+
+.row {
+	margin: 40px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.col h3 {
+	font-weight: 400;
+}
+
+.form-input {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+input[type='url'],
+select {
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: 30px;
+	padding: 5px 10px;
+}
+
+input[type='url']:focus,
+select:focus {
+	outline: none !important;
+	border: 1px solid #395b64;
+}
+
+.btn {
+	background: transparent;
+	padding: 10px 20px;
+	width: 100%;
+	border-radius: 5px;
+	text-transform: uppercase;
+	border: 1px solid #395b64;
+	transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+	color: #e7f6f2;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 700;
+	background-image: linear-gradient(180deg, #a5c9ca, #2c3333);
+}
+
+@media (max-width: 480px) {
+	.logo a h1 {
+		text-align: center;
+		font-size: 28px;
+	}
+
+	.col h3 {
+		width: 100%;
+		font-size: 14px;
+	}
+}
